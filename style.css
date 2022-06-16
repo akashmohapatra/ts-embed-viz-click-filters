@@ -1,0 +1,61 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  height: 98vh;
+}
+
+#embed {
+  flex: 80%;
+}
+
+#filter-panel {
+  flex: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#filter-panel .filter-footer {
+  padding: 10px;
+  margin: 5px;
+  display: none;
+}
+
+.filter-pill {
+  border: 1px solid #efefef;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 250px;
+  height: 100px;
+}
+
+.filter-pill-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #efefef;
+  cursor: pointer;
+}
+
+.filter-pill-values {
+}
+.pill {
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  background: #ddd;
+  font-size: smaller;
+}
