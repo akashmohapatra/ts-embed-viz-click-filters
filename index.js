@@ -15,16 +15,17 @@ import { updateFilterDisplay } from './filter-utils';
 // Runtime filters array is maintained by the host app
 // It drives the filter panel and feeds into the embed
 const runtimeFilters = [];
-const LIVEBOARD_ID = '8027c416-9ef3-47e4-92ed-637022ee2cb5';
+const LIVEBOARD_ID = 'd084c256-e284-4fc4-b80c-111cb606449a';
 
 // Initialize embed configuration
 init({
-  thoughtSpotHost: 'https://thoughtspotpmm.thoughtspot.cloud/',
+  thoughtSpotHost: 'https://860-ap-se2-890.thoughtspotstaging.cloud/',
   authType: AuthType.None,
 });
 
 const embed = new LiveboardEmbed('#embed', {
   liveboardId: LIVEBOARD_ID,
+  liveboardV2: true,
 });
 
 embed.on(EmbedEvent.VizPointClick, (payload) => {
